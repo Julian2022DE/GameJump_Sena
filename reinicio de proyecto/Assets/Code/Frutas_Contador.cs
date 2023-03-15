@@ -46,41 +46,41 @@ public class Frutas_Contador : MonoBehaviour
         {
             Score_M++;
             Manzanas.text = "" + Score_M;
-           
-            
-        } 
+
+
+        }
         if (collision.gameObject.tag == "Melon")
         {
             Score_C++;
-            Melon.text = "" + Score_C;        
-            
+            Melon.text = "" + Score_C;
+
         }
         if (collision.gameObject.tag == "Cereza")
         {
             Score_W++;
             Cereza.text = "" + Score_W;
-          
+
         }
 
         // Dinero 
 
-        if(collision.gameObject.tag == "Money")
+        if (collision.gameObject.tag == "Money")
         {
 
             //Manzana Money 
 
-            while(Score_M > 0) 
+            while (Score_M > 0)
             {
-               Score_M--;
-               Manzanas.text = "" + Score_M;
+                Score_M--;
+                Manzanas.text = "" + Score_M;
 
-                if(Score_M >= 0)
+                if (Score_M >= 0)
                 {
                     Money += 10;
                     Money_.text = "" + Money;
                 }
 
-                if(Score_M == 0)
+                if (Score_M == 0)
                 {
                     break;
                 }
@@ -88,18 +88,18 @@ public class Frutas_Contador : MonoBehaviour
 
             // Cereza Money
 
-            while(Score_C > 0)
+            while (Score_C > 0)
             {
-               Score_C--;
-               Cereza.text = "" + Score_C;
+                Score_C--;
+                Cereza.text = "" + Score_C;
 
                 if (Score_C <= 100)
                 {
                     Money += 10;
-                    Money_.text =  "" + Money;
+                    Money_.text = "" + Money;
                 }
 
-                if(Score_C == 0)
+                if (Score_C == 0)
                 {
                     break;
                 }
@@ -107,7 +107,7 @@ public class Frutas_Contador : MonoBehaviour
 
             // Melon Money
 
-            while(Score_W > 0)
+            while (Score_W > 0)
             {
                 Score_W--;
                 Melon.text = "" + Score_W;
@@ -117,11 +117,23 @@ public class Frutas_Contador : MonoBehaviour
                     Money += 10;
                     Money_.text = "" + Money;
                 }
-                if(Score_W == 0)
+                if (Score_W == 0)
                 {
                     break;
                 }
-            } 
+            }
+        }
+
+        while(collision.gameObject.tag == "Impuestos" && Money >= 100)
+        {
+                Debug.Log("PAGASTE IMPUESTOS");
+                Money --;
+                Money_.text = "" + Money;
+
+            if(Money == 0)
+            {
+                break;
+            }
         }
     }
 }
