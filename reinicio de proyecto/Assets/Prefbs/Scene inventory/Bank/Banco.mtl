@@ -1,0 +1,29 @@
+# Blender MTL File: 'CliffStore.blend'
+# Material Count: 2
+
+newmtl Material.014
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Banco_LOw_DefaultMaterial_Normal.png
+map_Kd I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Banco_LOw_DefaultMaterial_BaseColor.png
+map_Ns I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Banco_LOw_DefaultMaterial_Roughness.png
+refl I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Banco_LOw_DefaultMaterial_Metallic.png
+
+newmtl Tablas_del_banco1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Madera\\Tablas Low_Tablas_del_banco1_BaseColor.png
+map_Ns I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Madera\\Tablas Low_Tablas_del_banco1_Roughness.png
+refl I:\\Proyecto de Risco Unreal+Blender\\Textures\\Banco\\Madera\\Tablas Low_Tablas_del_banco1_Metallic.png
