@@ -127,7 +127,7 @@ public class Frutas_Contador : MonoBehaviour
         while(collision.gameObject.tag == "Impuestos" && Money >= 100)
         {
                 Debug.Log("PAGASTE IMPUESTOS");
-                Money --;
+                Money -= 100;
                 Money_.text = "" + Money;
 
             if(Money == 0)
