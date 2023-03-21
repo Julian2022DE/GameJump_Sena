@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Frutas_Contador : MonoBehaviour
 {
@@ -126,7 +127,7 @@ public class Frutas_Contador : MonoBehaviour
 
         while(collision.gameObject.tag == "Impuestos" && Money >= 100)
         {
-                Debug.Log("PAGASTE IMPUESTOS");
+                SceneManager.LoadScene("Win");
                 Money -= 100;
                 Money_.text = "" + Money;
 

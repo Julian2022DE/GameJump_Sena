@@ -5,8 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+
+    }
     public void Reiniciar()
     {
         SceneManager.LoadScene("Jesus");
+    }
+
+    public void Iniciar()
+    {
+        SceneManager.LoadScene("Jesus");
+    }
+
+    public void Salir()
+    {
+
     }
 }

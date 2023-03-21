@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject target;
 
+    public string Scene;
     private void Start()
     {
       //  anim = GetComponent<Animator>();
@@ -95,7 +96,7 @@ public class Enemy : MonoBehaviour
     {
         if(delay_Perder == true)
         {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+         SceneManager.LoadScene(Scene);
         }
 
     
