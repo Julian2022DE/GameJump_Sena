@@ -24,4 +24,14 @@ public class LoadScene : MonoBehaviour
     {
 
     }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Jesus()
+    {
+        SceneManager.LoadScene("Jesus");
+    }
 }
