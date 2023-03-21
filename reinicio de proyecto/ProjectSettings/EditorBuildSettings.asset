@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Julian_.unity
     guid: fea84a4ea8a830241bc40c508a49e747
+  - enabled: 1
+    path: Assets/Scenes/Perder_Tiempo.unity
+    guid: 431f528c5dcd3784f9c476d95478592e
   m_configObjects: {}
