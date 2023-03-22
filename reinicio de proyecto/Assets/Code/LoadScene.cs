@@ -17,7 +17,7 @@ public class LoadScene : MonoBehaviour
 
     public void Iniciar()
     {
-        SceneManager.LoadScene("Jesus");
+        SceneManager.LoadScene("Inicial Scene");
     }
 
     public void Salir()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private PlayerController playerActionsAsset;
+   /* private PlayerController playerActionsAsset;
     private InputAction move;
     [SerializeField]
     private Rigidbody rb;
@@ -120,5 +120,5 @@ public class Movement : MonoBehaviour
     private void DoAttack(InputAction.CallbackContext obj)
     {
         anim.SetTrigger("Attack");
-    }A
+    }*/
 }

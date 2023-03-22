@@ -1702,6 +1702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578131766}
   - component: {fileID: 1578131765}
+  - component: {fileID: 1578131767}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1737,6 +1738,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578131767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578131763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc837521c0806574288cf77ed5fad58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: Jesus
 --- !u!1 &1580654525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8254729080244996677, guid: a0db7f048a9ccd3418cc76708bc2c06c,
@@ -2419,7 +2433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "objetivo:\nPagar impuestos\nrevisa con la tecla e\n\n      "
+  m_text: "objetivo:\n\nrevisa con la tecla e\n\n      "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
