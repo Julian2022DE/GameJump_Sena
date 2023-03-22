@@ -34,4 +34,9 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene("Jesus");
     }
+
+    public void quit()
+    {
+        Application.Quit();
+    }
 }
