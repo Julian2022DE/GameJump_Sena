@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
             switch (rutina)
             {
                 case 0:
-                    // anim.SetBool("Walk", false);
+                   //  anim.SetBool("Walk", false);
                     break;
 
                 case 1:

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class Movement : MonoBehaviour
     private void OnEnable()
     {
         playerActionsAsset.Player.Jump.started += Dojump;
-        playerActionsAsset.Player.Attack.started += DoAttack;
+       // playerActionsAsset.Player.Attack.started += DoAttack;
         move = playerActionsAsset.Player.Move;
         playerActionsAsset.Player.Enable();
     }
@@ -39,7 +40,7 @@ public class Movement : MonoBehaviour
     private void OnDisable()
     {
         playerActionsAsset.Player.Jump.started -= Dojump;
-        playerActionsAsset.Player.Attack.started -= DoAttack;
+       // playerActionsAsset.Player.Attack.started -= DoAttack;
         playerActionsAsset.Player.Disable();
     }
 
@@ -120,5 +121,5 @@ public class Movement : MonoBehaviour
     private void DoAttack(InputAction.CallbackContext obj)
     {
         anim.SetTrigger("Attack");
-    }A
+    }
 }
