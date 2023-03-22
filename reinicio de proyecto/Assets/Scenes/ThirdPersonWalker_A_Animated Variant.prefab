@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 2345363000632946069, guid: a864841f5aaa71e4bb691ae1e0ac2c47,
         type: 3}
       propertyPath: m_Name
-      value: ThirdPersonWalker_A_Animated
+      value: ThirdPersonWalker_A_Animated Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a864841f5aaa71e4bb691ae1e0ac2c47, type: 3}

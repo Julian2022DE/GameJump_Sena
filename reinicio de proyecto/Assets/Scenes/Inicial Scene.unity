@@ -6196,6 +6196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bar_: {fileID: 8259306468226506402}
   time: 5
+  Scene: 
 --- !u!95 &8344210351725591550
 Animator:
   serializedVersion: 4

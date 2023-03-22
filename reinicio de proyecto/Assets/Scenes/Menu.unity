@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,7 +186,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 17b8c5fd9916fa14095e175499f28886, type: 2}
   m_sharedMaterial: {fileID: 6398342508727186933, guid: 17b8c5fd9916fa14095e175499f28886,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 6398342508727186933, guid: 17b8c5fd9916fa14095e175499f28886, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -327,7 +328,7 @@ Canvas:
   m_GameObject: {fileID: 154523789}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -692,7 +693,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 249443c1551e8eb4ba8078795bd657a7, type: 2}
   m_sharedMaterial: {fileID: -4958578568446110888, guid: 249443c1551e8eb4ba8078795bd657a7,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -4958578568446110888, guid: 249443c1551e8eb4ba8078795bd657a7, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:

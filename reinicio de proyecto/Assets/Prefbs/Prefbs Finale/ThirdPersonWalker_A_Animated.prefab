@@ -133,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bar_: {fileID: 8259306468971780034}
   time: 5
+  Scene: 
 --- !u!1 &8257491229499196576
 GameObject:
   m_ObjectHideFlags: 0
