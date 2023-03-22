@@ -18,7 +18,6 @@ public class Frutas_Contador : MonoBehaviour
     public TextMeshProUGUI Money_;
 
 
-
     public GameObject Carnet_;
 
     void Start()
@@ -31,47 +30,35 @@ public class Frutas_Contador : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown("e"))
-        {
-            Debug.Log("Hola");
+        {         
             Carnet_.SetActive(true);
-
         }
         if (Input.GetKeyUp("e")) 
         {
-            Debug.Log("Bay");
             Carnet_.SetActive(false);
-
         }
     }
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Manzana")
         {
-            Score_M++;
+            Score_M += 1;
             Manzanas.text = "" + Score_M;
-
-
         }
         if (collision.gameObject.tag == "Melon")
         {
-            Score_W++;
+            Score_W += 1;
             Melon.text = "" + Score_W;
-
         }
         if (collision.gameObject.tag == "Cereza")
         {
-            Score_C++;
+            Score_C += 1;
             Cereza.text = "" + Score_C;
-
         }
-
         // Dinero 
-
         if (collision.gameObject.tag == "Money")
         {
-
             //Manzana Money 
-
             while (Score_M > 0)
             {
                 Score_M--;
@@ -88,9 +75,7 @@ public class Frutas_Contador : MonoBehaviour
                     break;
                 }
             }
-
             // Cereza Money
-
             while (Score_C > 0)
             {
                 Score_C--;
@@ -107,9 +92,7 @@ public class Frutas_Contador : MonoBehaviour
                     break;
                 }
             }
-
             // Melon Money
-
             while (Score_W > 0)
             {
                 Score_W--;
@@ -126,7 +109,6 @@ public class Frutas_Contador : MonoBehaviour
                 }
             }
         }
-
         while(collision.gameObject.tag == "Impuestos" && Money >= 100)
         {
                 SceneManager.LoadScene("Win");
