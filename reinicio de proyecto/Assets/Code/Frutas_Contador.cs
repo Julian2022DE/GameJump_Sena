@@ -25,6 +25,8 @@ public class Frutas_Contador : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Score_M = 0;
+        Score_C= 0;
+        Score_W= 0;
     }
     private void Update()
     {
@@ -52,14 +54,14 @@ public class Frutas_Contador : MonoBehaviour
         }
         if (collision.gameObject.tag == "Melon")
         {
-            Score_C++;
-            Melon.text = "" + Score_C;
+            Score_W++;
+            Melon.text = "" + Score_W;
 
         }
         if (collision.gameObject.tag == "Cereza")
         {
-            Score_W++;
-            Cereza.text = "" + Score_W;
+            Score_C++;
+            Cereza.text = "" + Score_C;
 
         }
 
@@ -94,7 +96,7 @@ public class Frutas_Contador : MonoBehaviour
                 Score_C--;
                 Cereza.text = "" + Score_C;
 
-                if (Score_C <= 100)
+                if (Score_C >= 0)
                 {
                     Money += 10;
                     Money_.text = "" + Money;
@@ -113,7 +115,7 @@ public class Frutas_Contador : MonoBehaviour
                 Score_W--;
                 Melon.text = "" + Score_W;
 
-                if (Score_W <= 100)
+                if (Score_W >= 0)
                 {
                     Money += 10;
                     Money_.text = "" + Money;
